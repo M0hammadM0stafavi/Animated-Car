@@ -86,8 +86,8 @@
 }
 
 .wheels {
-  position: absolute;
   left: 50%;
+  position: absolute;
   transform: translateX(-50%);
   bottom: 200px;
   z-index: 3;
@@ -95,16 +95,23 @@
 
 .wheels img {
   width: 70px;
+  animation: rotate 1s linear infinite;
 }
 
-.wheels-front {
+.wheel-front {
   position: absolute;
   left: 81px;
   bottom: -84px;
 }
 
-.wheels-back {
+.wheel-back {
   position: absolute;
   right: 94px;
   top: 11px;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
