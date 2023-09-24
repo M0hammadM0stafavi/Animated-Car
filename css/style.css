@@ -20,4 +20,15 @@
     left: 0;
     right: 0;
     z-index: 1;
+    animation: road 5s linear infinite;
 }
+
+@keyframes road{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(4000px);
+    }
+}
+
