@@ -21,6 +21,7 @@
     right: 0;
     z-index: 1;
     animation: road 5s linear infinite;
+    background-repeat: repeat-x;
 }
 
 @keyframes road{
@@ -28,7 +29,7 @@
         transform: translate(0);
     }
     to{
-        transform: translate(4000px);
+        transform: translate(-4000px);
     }
 }
 
