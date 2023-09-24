@@ -68,7 +68,19 @@
 
 .car img{
     width: 100%;
-   
+    animation: shake 2s linear infinite;
 }
 
+@keyframes shake {
+    0%{
+        transform: translateY(-2px);
+    }
 
+    50%{
+        transform: translateY(2px);
+    }
+
+    100%{
+        transform: translateY(-2px);
+    }
+}
