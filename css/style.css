@@ -66,21 +66,45 @@
   z-index: 2;
 }
 
-.car img{
-    width: 100%;
-    animation: shake 2s linear infinite;
+.car img {
+  width: 100%;
+  animation: shake 2s linear infinite;
 }
 
 @keyframes shake {
-    0%{
-        transform: translateY(-2px);
-    }
+  0% {
+    transform: translateY(-2px);
+  }
 
-    50%{
-        transform: translateY(2px);
-    }
+  50% {
+    transform: translateY(2px);
+  }
 
-    100%{
-        transform: translateY(-2px);
-    }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+.wheels {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 200px;
+  z-index: 3;
+}
+
+.wheels img {
+  width: 70px;
+}
+
+.wheels-front {
+  position: absolute;
+  left: 81px;
+  bottom: -84px;
+}
+
+.wheels-back {
+  position: absolute;
+  right: 94px;
+  top: 11px;
 }
